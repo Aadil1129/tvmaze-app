@@ -27,14 +27,7 @@ function Home() {
         <Row>
           {shows.map((show, index) => (
             <Col sm={12} md={3} key={index} style={{ marginTop: "2rem" }}>
-              <Card
-                style={{
-                  width: "14rem",
-                  marginBottom: "10px",
-                  border: "none",
-                  overflow: "hidden",
-                }}
-              >
+              <Card id="home-cards">
                 <a href={`/summary/${show.show.id}`} rel="noreferral">
                   <Card.Img
                     id="card-image"

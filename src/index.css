@@ -19,6 +19,12 @@ body {
   background-color: #2c302d;
   margin-bottom: 1rem;
 }
+#home-cards {
+  width: 14rem;
+  margin-bottom: 10px;
+  border: none;
+  overflow: hidden;
+}
 .card-name {
   font-size: 16px;
   color: #e1dddd;
@@ -138,4 +144,24 @@ body {
 }
 .input-required {
   color: red;
+}
+@media screen and (max-width: 768px) {
+  .summary-data-grid {
+    flex-direction: column;
+  }
+  .summary-page {
+    height: 100%;
+  }
+  .summary-details {
+    width: 100%;
+  }
+  .booking-box {
+    width: 100%;
+  }
+  #home-cards {
+    margin: auto;
+  }
+  .card-detail {
+    text-align: center;
+  }
 }
